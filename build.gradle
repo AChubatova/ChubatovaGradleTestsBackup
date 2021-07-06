@@ -20,7 +20,7 @@ tasks.withType(Test).configureEach {
     retry {
         maxRetries.set(30)
         filter {
-            includeAnnotationClasses.add("com....Flaky")
+            includeClasses.add("*test")
         }
 
 }
