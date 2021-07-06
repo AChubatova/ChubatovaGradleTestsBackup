@@ -12,10 +12,18 @@ dependencies {
     testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.3.1")
 }
 
-tasks.test {
+
+
+
+tasks.withType(Test).configureEach {
+
     useJUnitPlatform()
+
     retry {
         maxRetries.set(30)
-        maxFailures = 20
+        filter {
+            includeClasses.add("*test")
+        }
+
     }
 }
