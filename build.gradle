@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation("junit:junit:5.7")
+    testImplementation("junit:junit:4.13")
 }
 
 tasks.test {
