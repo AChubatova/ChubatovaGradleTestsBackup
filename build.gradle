@@ -7,11 +7,13 @@ repositories {
 }
 
 dependencies {
-    testImplementation("junit:junit:4.13")
+    //testImplementation("junit:junit:5.7")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.3.1")
+    testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.3.1")
 }
 
 tasks.test {
-    useJUnit()
+    useJUnitPlatform()
     retry {
         maxRetries.set(30)
         maxFailures = 20

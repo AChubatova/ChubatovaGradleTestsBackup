@@ -1,8 +1,12 @@
 package my;
 
-import junit.framework.TestCase;
-import org.junit.Assert;
-import org.junit.Test;
+//import junit.framework.TestCase;
+//import org.junit.Assert;
+//import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+
 
 public class mytest {
 
@@ -11,7 +15,7 @@ public class mytest {
         if (System.currentTimeMillis()%3==1){
         }
         else {
-            Assert.fail("fail message");
+            assertEquals(2, 1);
         };
 
     };
@@ -20,7 +24,7 @@ public class mytest {
         if (System.currentTimeMillis()%3==1){
         }
         else {
-            Assert.fail("fail message");
+            assertEquals(2, 1);
         };
 
     };
@@ -29,7 +33,7 @@ public class mytest {
         if (System.currentTimeMillis()%3==1){
         }
         else {
-            Assert.fail("fail message");
+            assertEquals(2, 1);
         };
 
     };
